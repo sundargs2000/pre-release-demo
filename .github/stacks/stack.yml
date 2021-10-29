@@ -37,7 +37,7 @@ configs:                                               # stack config applied to
       parameters:
         dismiss-stale-reviews: true                      # default: false
         required-approving-review-count: 1
-        require-code-owner-reviews: ${{inputs.GITHUB_PAT}}
+        require-code-owner-reviews: true
 
   environments:                                        
     - name: development
