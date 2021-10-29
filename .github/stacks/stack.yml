@@ -32,6 +32,7 @@ configs:                                               # stack config applied to
        topics:                                            # repository tags for new repository
        - nextjs
        - github-pages
+       top: ok
 
   branches:                                            # branching configs for new repository
     - name: main
