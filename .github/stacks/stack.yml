@@ -27,7 +27,7 @@ configs:                                               # stack config applied to
        description: 'Setup your Nextjs site in Github Pages'
        secrets: 
          - name: GH_PAT
-           value: ${{inputs.GITHUB_PAT1}}
+           value: ${{inputs.GITHUB_PAT}}
        topics:                                            # repository tags for new repository
        - nextjs
        - github-pages
@@ -36,7 +36,7 @@ configs:                                               # stack config applied to
     - name: main
       parameters:
         dismiss-stale-reviews: true                      # default: false
-        required-approving-review-count: 1
+        required-approving-review-count: ${{inputs.GITHUB_PAT}}
         require-code-owner-reviews: true
 
   environments:                                        
